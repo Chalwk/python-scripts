@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<div class="container">
+  <article class="script-detail">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="{{ '/' | relative_url }}">Scripts</a>
+      <span class="breadcrumb-sep">/</span>
+      <span>{{ page.title }}</span>
+    </nav>
+
+    <header class="script-detail-header">
+      <div class="script-detail-title">
+        <h1>{{ page.title }}</h1>
+        {% if page.category %}
+          <span class="category-badge">{{ page.category }}</span>
+        {% endif %}
+      </div>
+
+      {% if page.description %}
+        <p class="script-detail-lede">{{ page.description }}</p>
+      {% endif %}
+
+      {% if page.source_path %}
+        <div class="script-detail-actions">
+          <a class="btn btn-sm btn-secondary"
+             href="https://github.com/{{ site.repository }}/blob/main/{{ page.source_path }}"
+             target="_blank" rel="noopener">
+            View source on GitHub
+          </a>
+        </div>
+      {% endif %}
+
+      {% if page.tags %}
+        <div class="script-detail-tags">
+          {% for tag in page.tags %}
+            <span class="tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </header>
+
+    <div class="prose">
+      {{ content }}
+    </div>
+  </article>
+</div>

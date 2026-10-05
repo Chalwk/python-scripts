@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: GitHub Discussions
+    url: https://github.com/Chalwk/python-scripts/discussions
+    about: Ask questions, share ideas, or discuss anything that isn't a bug or a script request.
+  - name: Discord Support
+    url: https://discord.gg/wuVcM9AZrr
+    about: Join our Discord for live help and discussions.

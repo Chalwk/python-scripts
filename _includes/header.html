@@ -1,0 +1,17 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <span class="brand-mark">λ</span>
+      <span class="brand-name">{{ site.title }}</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="{{ '/contributing/' | relative_url }}">Contributing</a>
+      <a class="nav-external"
+         href="https://github.com/{{ site.repository }}"
+         target="_blank" rel="noopener">GitHub ↗</a>
+    </nav>
+  </div>
+</header>

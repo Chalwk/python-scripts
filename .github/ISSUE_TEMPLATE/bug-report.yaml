@@ -1,0 +1,90 @@
+name: Bug Report
+description: Report a bug, crash, or unexpected behaviour in one of the scripts.
+title: "[BUG] <title>"
+labels: [ "bug", "needs triage" ]
+assignees: Chalwk
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Describe the bug**
+        > Provide a clear and concise description in the following sections.
+        > Use headers (`#`) or lists (`-`) to organize your thoughts.
+  - type: input
+    id: script
+    attributes:
+      label: Which script?
+      description: Provide the path to the script that is misbehaving.
+      placeholder: "e.g., netsec/ipqs_lookup.py"
+    validations:
+      required: true
+  - type: input
+    id: script-version
+    attributes:
+      label: Script Version
+      description: Run the script with `--help` or check the header comment for the version number.
+      placeholder: "e.g., 4.0"
+    validations:
+      required: false
+  - type: textarea
+    id: command
+    attributes:
+      label: Command Run
+      description: Paste the exact command line you ran. Redact any API keys or real IP addresses.
+      placeholder: "e.g., python netsec/ipqs_lookup.py 8.8.8.8 --json"
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: Describe what you expected to happen.
+      placeholder: "Explain the expected behavior"
+    validations:
+      required: true
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual Behavior
+      description: Describe what actually happened, including any tracebacks or error output.
+      placeholder: "Paste the full traceback or error output here"
+      render: shell
+    validations:
+      required: true
+  - type: input
+    id: python-version
+    attributes:
+      label: Python Version
+      description: Output of `python --version`.
+      placeholder: "e.g., 3.11.4"
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating System
+      description: Which OS are you running the script on?
+      placeholder: "e.g., Windows 11, Ubuntu 24.04, macOS 15"
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Write any other context or information about the bug here.
+      placeholder: "Further context or information here"
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        **Screenshots and Logs**
+        > Include any relevant screenshots or log files to help illustrate the bug.
+        >
+        > Please make sure you have redacted any API keys, tokens, or real IP addresses before posting.
+        >
+        >
+        > Thank you
+        >
+        > **I appreciate your effort in reporting bugs in these scripts. Your input is invaluable!**

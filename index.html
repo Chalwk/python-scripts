@@ -1,0 +1,76 @@
+---
+layout: default
+title: Home
+description: "A grab-bag of self-contained Python scripts."
+---
+
+<section class="hero">
+  <div class="container">
+    <span class="hero-eyebrow">Python 3.8+ · MIT licensed</span>
+    <h1>
+      Assorted Python scripts,<br>
+      <span class="accent">self-contained by design.</span>
+    </h1>
+    <p class="hero-lede">
+      A grab-bag of scripts I've written that turned out to be useful more than
+      once. Different domains, different problems, one rule: drop a script in,
+      run it, get an answer. No frameworks. No dependency hell.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary"
+         href="https://github.com/{{ site.repository }}"
+         target="_blank" rel="noopener">
+        View on GitHub
+      </a>
+      <a class="btn btn-secondary" href="{{ '/about/' | relative_url }}">
+        About this repo
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>Scripts</h2>
+      <span class="section-meta">{{ site.scripts | size }} available</span>
+    </div>
+
+    <div class="script-grid">
+      {% for script in site.scripts %}
+        <article class="script-card">
+          <header class="script-card-head">
+            <h3 class="script-card-name">
+              <a href="{{ script.url | relative_url }}">
+                {{ script.title }}
+              </a>
+            </h3>
+            <span class="category-badge">{{ script.category }}</span>
+          </header>
+
+          <p class="script-card-desc">{{ script.description }}</p>
+
+          {% if script.features %}
+            <ul class="script-card-features">
+              {% for feature in script.features %}
+                <li>{{ feature | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+
+          <div class="script-card-footer">
+            <div class="script-card-tags">
+              {% for tag in script.tags %}
+                <span class="tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+            <a class="btn btn-sm btn-secondary"
+               href="{{ script.url | relative_url }}">
+              Learn more
+            </a>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

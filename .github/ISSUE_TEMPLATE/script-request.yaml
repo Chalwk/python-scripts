@@ -1,0 +1,83 @@
+name: Script Request
+description: Suggest a new script, or a feature for an existing one.
+title: "[REQUEST] <title>"
+labels: [ "enhancement", "needs triage" ]
+assignees: Chalwk
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Describe the request**
+        > Provide a clear and concise description in the following sections.
+        > Use headers (`#`) or lists (`-`) to organize your thoughts.
+        > Describe the problem you are trying to solve, not just the solution you have in mind.
+  - type: dropdown
+    id: request-type
+    attributes:
+      label: Request Type
+      description: Is this for a brand new script, or an improvement to one that already exists?
+      options:
+        - New script
+        - Feature for an existing script
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: existing-script
+    attributes:
+      label: Existing Script (if applicable)
+      description: If this is a feature request, provide the path to the script. Otherwise, type 'N/A'.
+      placeholder: "e.g., netsec/ipqs_lookup.py"
+    validations:
+      required: true
+  - type: input
+    id: category
+    attributes:
+      label: Suggested Category
+      description: Which folder would this best fit into? Pick the closest match, or suggest a new one.
+      placeholder: "e.g., netsec, automation, text, web, misc"
+    validations:
+      required: false
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: Describe the task, not the solution. "I need to parse X" beats "add a flag --foo".
+      placeholder: "Describe the problem here"
+    validations:
+      required: true
+  - type: textarea
+    id: ideal-output
+    attributes:
+      label: What would the ideal command and output look like?
+      description: Paste a mock-up of the command line and/or the expected output.
+      placeholder: |
+        Command:
+        python scripts/example.py --input file.txt
+
+        Output:
+        [expected output here]
+      render: shell
+    validations:
+      required: false
+  - type: textarea
+    id: existing-tools
+    attributes:
+      label: Have you found anything that already does this?
+      description: Links to other tools, Stack Overflow answers, or existing packages. Optional but helpful.
+      placeholder: "Links or references here"
+    validations:
+      required: false
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Write any other context, constraints, or edge cases here.
+      placeholder: "Further context or information here"
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        **Thank you**
+        > **I appreciate your contribution to making this collection of scripts more useful. Your ideas help shape what gets built next!**

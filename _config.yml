@@ -1,0 +1,72 @@
+title: python-scripts
+tagline: Assorted self-contained Python scripts
+description: "A grab-bag of self-contained Python scripts."
+
+url: "https://chalwk.github.io"
+baseurl: "/python-scripts"
+
+author:
+  name: Jericho Crosby
+  handle: Chalwk
+  email: chalwk.dev@gmail.com
+
+repository: "Chalwk/python-scripts"
+github_username: Chalwk
+
+# ---------------------------------------------------------------------------
+# Build
+# ---------------------------------------------------------------------------
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# ---------------------------------------------------------------------------
+# Collections
+# ---------------------------------------------------------------------------
+collections:
+  scripts:
+    output: true
+    permalink: /scripts/:name/
+
+# ---------------------------------------------------------------------------
+# Files that must not end up in _site/
+# ---------------------------------------------------------------------------
+exclude:
+  - .github
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - vendor
+  - node_modules
+  - netsec
+  - automation
+  - text
+  - web
+  - misc
+
+# ---------------------------------------------------------------------------
+# Defaults
+# ---------------------------------------------------------------------------
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "scripts"
+    values:
+      layout: "script"
