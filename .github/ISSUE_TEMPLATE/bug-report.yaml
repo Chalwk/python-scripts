@@ -7,6 +7,16 @@ body:
   - type: markdown
     attributes:
       value: |
+        **Is this a security issue?**
+        > If this bug could expose API keys, leak sensitive data, or let an
+        > attacker do something they shouldn't, **do not open a public issue**.
+        > Use the [Report a vulnerability](https://github.com/Chalwk/python-scripts/security/advisories/new)
+        > link on the new issue page instead.
+        >
+        > For all other bugs, continue below.
+  - type: markdown
+    attributes:
+      value: |
         **Describe the bug**
         > Provide a clear and concise description in the following sections.
         > Use headers (`#`) or lists (`-`) to organize your thoughts.

@@ -1,5 +1,8 @@
 blank_issues_enabled: true
 contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/Chalwk/python-scripts/security/advisories/new
+    about: Do not open a public issue for security problems. Use this private channel instead.
   - name: GitHub Discussions
     url: https://github.com/Chalwk/python-scripts/discussions
     about: Ask questions, share ideas, or discuss anything that isn't a bug or a script request.

@@ -1,6 +1,7 @@
 # python-scripts
 
 [![Website](https://img.shields.io/badge/website-chalwk.github.io%2Fpython--scripts-blue)](https://chalwk.github.io/python-scripts/)
+[![Security Policy](https://img.shields.io/badge/security-policy-blue)](SECURITY.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 Assorted self-contained Python scripts.

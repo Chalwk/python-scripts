@@ -17,6 +17,14 @@ and include:
 
 **Redact any API keys, tokens, or real IP addresses before posting.**
 
+## Reporting a security issue
+
+**Do not open a public issue for security problems.**
+
+Use the private [Report a vulnerability](https://github.com/{{ site.repository }}/security/advisories/new)
+flow on the Security tab, or see [SECURITY.md](https://github.com/{{ site.repository }}/blob/main/SECURITY.md)
+for the full policy, scope, and expected timelines.
+
 ## Suggesting a script or feature
 
 Use the [script request template](https://github.com/{{ site.repository }}/issues/new?template=script-request.yaml).
