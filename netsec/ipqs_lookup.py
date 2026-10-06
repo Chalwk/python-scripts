@@ -127,9 +127,7 @@ CONFIG: Dict[str, Any] = {
     # MANUAL LOOKUP LIST (used when no IPs are passed on the command line)
     # ------------------------------------------------------------------
     "target_ips": [
-        "45.159.90.222",
-        "195.240.5.124",
-        "122.61.197.124",
+        "xxx.xxx.xxx.xxx",
     ],
     # Full report per IP (True) or one compact line per IP (False).
     "log_verbose": True,
