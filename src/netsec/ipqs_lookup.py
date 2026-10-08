@@ -18,21 +18,21 @@ DESCRIPTION:
 
 USAGE
 -----
-    python ipqs_lookup.py                              # uses CONFIG["target_ips"]
-    python ipqs_lookup.py 8.8.8.8
-    python ipqs_lookup.py 8.8.8.8 1.1.1.1 2606:4700:4700::1111
-    python ipqs_lookup.py --file ips.txt
-    type ips.txt | python ipqs_lookup.py -
-    python ipqs_lookup.py 8.8.8.8 --json
-    python ipqs_lookup.py 8.8.8.8 --jsonl --redact
-    python ipqs_lookup.py --file ips.txt --csv results.csv --only-flagged
-    python ipqs_lookup.py --file ips.txt --report --fields fraud_score,proxy,vpn,reasons
-    python ipqs_lookup.py 8.8.8.8 --user-agent "Mozilla/5.0 ..." --user-language en-NZ
-    python ipqs_lookup.py 8.8.8.8 --strictness 1 --transaction-strictness 1
-    python ipqs_lookup.py 8.8.8.8 --field billing_phone=64211234567 --field billing_country=NZ
-    python ipqs_lookup.py --config ipqs.json --refresh
-    python ipqs_lookup.py --postback 1a2b3c4d
-    python ipqs_lookup.py --self-test
+    python src/netsec/ipqs_lookup.py                              # uses CONFIG["target_ips"]
+    python src/netsec/ipqs_lookup.py 8.8.8.8
+    python src/netsec/ipqs_lookup.py 8.8.8.8 1.1.1.1 2606:4700:4700::1111
+    python src/netsec/ipqs_lookup.py --file ips.txt
+    type ips.txt | python src/netsec/ipqs_lookup.py -
+    python src/netsec/ipqs_lookup.py 8.8.8.8 --json
+    python src/netsec/ipqs_lookup.py 8.8.8.8 --jsonl --redact
+    python src/netsec/ipqs_lookup.py --file ips.txt --csv results.csv --only-flagged
+    python src/netsec/ipqs_lookup.py --file ips.txt --report --fields fraud_score,proxy,vpn,reasons
+    python src/netsec/ipqs_lookup.py 8.8.8.8 --user-agent "Mozilla/5.0 ..." --user-language en-NZ
+    python src/netsec/ipqs_lookup.py 8.8.8.8 --strictness 1 --transaction-strictness 1
+    python src/netsec/ipqs_lookup.py 8.8.8.8 --field billing_phone=64211234567 --field billing_country=NZ
+    python src/netsec/ipqs_lookup.py --config ipqs.json --refresh
+    python src/netsec/ipqs_lookup.py --postback 1a2b3c4d
+    python src/netsec/ipqs_lookup.py --self-test
 
 API KEY
 -------

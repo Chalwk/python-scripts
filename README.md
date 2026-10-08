@@ -14,13 +14,16 @@ Full documentation for each script lives on the [website](https://chalwk.github.
 
 ### Network & security
 
-| Script                                           | Docs                                                                          | What it does                                                                         |
-| ------------------------------------------------ | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| [`netsec/ipqs_lookup.py`](netsec/ipqs_lookup.py) | [Read the docs](https://chalwk.github.io/python-scripts/scripts/ipqs-lookup/) | IPQualityScore proxy / VPN / Tor / fraud lookup with a transparent two-layer verdict |
+| Script                                                   | Docs                                                                          | What it does                                                                         |
+| -------------------------------------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| [`src/netsec/ipqs_lookup.py`](src/netsec/ipqs_lookup.py) | [Read the docs](https://chalwk.github.io/python-scripts/scripts/ipqs-lookup/) | IPQualityScore proxy / VPN / Tor / fraud lookup with a transparent two-layer verdict |
 
 ### Automation
 
-*Nothing yet.*
+| Script                                                               | Docs                                                                            | What it does                                                                      |
+| -------------------------------------------------------------------- | ------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| [`src/automation/git_stats.py`](src/automation/git_stats.py)         | [Read the docs](https://chalwk.github.io/python-scripts/scripts/git-stats/)     | Per-author commit stats, bus-factor estimate, and commit histogram from `git log` |
+| [`src/automation/discord_audit.py`](src/automation/discord_audit.py) | [Read the docs](https://chalwk.github.io/python-scripts/scripts/discord-audit/) | Read-only Discord guild audit: channels, permission overwrites, roles and members |
 
 ### Text & data
 
@@ -47,7 +50,7 @@ Clone and run:
 ```bash
 git clone https://github.com/Chalwk/python-scripts.git
 cd python-scripts
-python netsec/ipqs_lookup.py --help
+python src/netsec/ipqs_lookup.py --help
 ```
 
 ---
@@ -65,6 +68,21 @@ Scripts in this repo try to follow a few house rules:
   third, hardcoded last (and never hardcoded in a published script).
 - **Destructive actions are opt-in**, not default.
 - **MIT licensed.** Take what's useful.
+
+---
+
+## Layout
+
+```
+src/                Python source (excluded from the Jekyll build)
+├── netsec/         Network & security
+├── automation/     Automation & reporting
+├── text/           Text & data
+├── web/            Web
+└── misc/           Everything else
+
+_scripts/           Jekyll collection: one doc page per script
+```
 
 ---
 

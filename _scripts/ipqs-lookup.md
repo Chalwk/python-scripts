@@ -1,6 +1,6 @@
 ---
 title: ipqs_lookup.py
-source_path: netsec/ipqs_lookup.py
+source_path: src/netsec/ipqs_lookup.py
 category: Network & Security
 description: "IPQualityScore proxy / VPN / Tor / fraud lookup with a transparent two-layer verdict."
 tags: [security, networking, api, cli]
@@ -44,13 +44,24 @@ change it in `CONFIG["local_weights"]`.
 ## Quick start
 
 ```bash
-export IPQS_API_KEY="your_key_here"      # Linux / macOS
-setx IPQS_API_KEY "your_key_here"        # Windows
+export IPQS_API_KEY="your_key_here"                            # Linux / macOS
+setx IPQS_API_KEY "your_key_here"                              # Windows
 
-python netsec/ipqs_lookup.py 8.8.8.8
-python netsec/ipqs_lookup.py --file ips.txt --only-flagged
-python netsec/ipqs_lookup.py --file ips.txt --report
-python netsec/ipqs_lookup.py --self-test
+python src/netsec/ipqs_lookup.py                               # uses CONFIG["target_ips"]
+python src/netsec/ipqs_lookup.py 8.8.8.8
+python src/netsec/ipqs_lookup.py 8.8.8.8 1.1.1.1 2606:4700:4700::1111
+python src/netsec/ipqs_lookup.py --file ips.txt
+type ips.txt | python src/netsec/ipqs_lookup.py -
+python src/netsec/ipqs_lookup.py 8.8.8.8 --json
+python src/netsec/ipqs_lookup.py 8.8.8.8 --jsonl --redact
+python src/netsec/ipqs_lookup.py --file ips.txt --csv results.csv --only-flagged
+python src/netsec/ipqs_lookup.py --file ips.txt --report --fields fraud_score,proxy,vpn,reasons
+python src/netsec/ipqs_lookup.py 8.8.8.8 --user-agent "Mozilla/5.0 ..." --user-language en-NZ
+python src/netsec/ipqs_lookup.py 8.8.8.8 --strictness 1 --transaction-strictness 1
+python src/netsec/ipqs_lookup.py 8.8.8.8 --field billing_phone=64211234567 --field billing_country=NZ
+python src/netsec/ipqs_lookup.py --config ipqs.json --refresh
+python src/netsec/ipqs_lookup.py --postback 1a2b3c4d
+python src/netsec/ipqs_lookup.py --self-test
 ```
 
 Get a free key (1,000 lookups) at
@@ -59,7 +70,7 @@ Get a free key (1,000 lookups) at
 ## Full options
 
 ```bash
-python netsec/ipqs_lookup.py --help
+python src/netsec/ipqs_lookup.py --help
 ```
 
 Highlights:

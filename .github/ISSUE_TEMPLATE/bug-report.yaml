@@ -25,7 +25,7 @@ body:
     attributes:
       label: Which script?
       description: Provide the path to the script that is misbehaving.
-      placeholder: "e.g., netsec/ipqs_lookup.py"
+      placeholder: "e.g., src/netsec/ipqs_lookup.py"
     validations:
       required: true
   - type: input
@@ -41,7 +41,7 @@ body:
     attributes:
       label: Command Run
       description: Paste the exact command line you ran. Redact any API keys or real IP addresses.
-      placeholder: "e.g., python netsec/ipqs_lookup.py 8.8.8.8 --json"
+      placeholder: "e.g., python src/netsec/ipqs_lookup.py 8.8.8.8 --json"
       render: shell
     validations:
       required: true

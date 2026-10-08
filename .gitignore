@@ -26,6 +26,13 @@ pip-wheel-metadata/
 htmlcov/
 coverage.xml
 
+# Type checker / linter / tool caches
+.ruff_cache/
+.mypy_cache/
+.dmypy.json
+.pytype/
+.hypothesis/
+
 # IDE / editor
 .vscode/
 .idea/
@@ -41,6 +48,11 @@ coverage.xml
 Thumbs.db
 desktop.ini
 
+# Patch / merge leftovers
+*.orig
+*.rej
+*.bak
+
 # ---------------------------------------------------------------
 # Script output / runtime artefacts
 # ---------------------------------------------------------------
@@ -50,6 +62,17 @@ desktop.ini
 # ipqs_lookup.py
 ipqs_cache.json
 *.ipqs-cache
+cache.json
+.ipqs-cache/
+
+# git_stats.py
+stats.csv
+git-stats.csv
+
+# discord_audit.py
+members.csv
+channels.csv
+audit.json
 
 # Generic run artefacts - extend as needed
 *.log
@@ -62,6 +85,7 @@ ipqs.json
 config.local.json
 .env
 .env.*
+.envrc
 secrets.json
 
 # ---------------------------------------------------------------

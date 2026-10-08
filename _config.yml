@@ -50,11 +50,7 @@ exclude:
   - README.md
   - vendor
   - node_modules
-  - netsec
-  - automation
-  - text
-  - web
-  - misc
+  - src
 
 # ---------------------------------------------------------------------------
 # Defaults

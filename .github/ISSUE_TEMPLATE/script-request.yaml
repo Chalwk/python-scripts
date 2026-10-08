@@ -27,7 +27,7 @@ body:
     attributes:
       label: Existing Script (if applicable)
       description: If this is a feature request, provide the path to the script. Otherwise, type 'N/A'.
-      placeholder: "e.g., netsec/ipqs_lookup.py"
+      placeholder: "e.g., src/netsec/ipqs_lookup.py"
     validations:
       required: true
   - type: input
@@ -53,7 +53,7 @@ body:
       description: Paste a mock-up of the command line and/or the expected output.
       placeholder: |
         Command:
-        python scripts/example.py --input file.txt
+        python src/netsec/example.py --input file.txt
 
         Output:
         [expected output here]
