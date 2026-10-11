@@ -22,7 +22,7 @@ Full documentation for each script lives on the [website](https://chalwk.github.
 
 | Script                                                               | Docs                                                                            | What it does                                                                      |
 | -------------------------------------------------------------------- | ------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| [`src/automation/git_stats.py`](src/automation/git-stats.py)         | [Read the docs](https://chalwk.github.io/python-scripts/scripts/git-stats/)     | Per-author commit stats, bus-factor estimate, and commit histogram from `git log` |
+| [`src/automation/git-stats.py`](src/automation/git-stats.py)         | [Read the docs](https://chalwk.github.io/python-scripts/scripts/git-stats/)     | Per-author commit stats, bus-factor estimate, and commit histogram from `git log` |
 | [`src/automation/discord-audit.py`](src/automation/discord-audit.py) | [Read the docs](https://chalwk.github.io/python-scripts/scripts/discord-audit/) | Read-only Discord guild audit: channels, permission overwrites, roles and members |
 
 ### Text & data
