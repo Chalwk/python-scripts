@@ -16,6 +16,9 @@ layout: default
         {% if page.category %}
           <span class="category-badge">{{ page.category }}</span>
         {% endif %}
+        {% if page.latest_version %}
+          <span class="version-badge">v{{ page.latest_version }}</span>
+        {% endif %}
       </div>
 
       {% if page.description %}

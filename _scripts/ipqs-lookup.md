@@ -1,9 +1,10 @@
 ---
-title: ipqs_lookup.py
-source_path: src/netsec/ipqs_lookup.py
+title: ipqs-lookup.py
+source_path: src/netsec/ipqs-lookup.py
 category: Network & Security
 description: "IPQualityScore proxy / VPN / Tor / fraud lookup with a transparent two-layer verdict."
 tags: [security, networking, api, cli]
+latest_version: 4.0
 features:
   - "Two-layer verdict (IPQS score + local evidence score)"
   - "JSON, JSONL, CSV and compact TSV output"

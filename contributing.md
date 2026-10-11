@@ -43,7 +43,7 @@ Before opening a PR, make sure:
 - No hardcoded secrets, API keys, or real IP addresses
 - You've tested the cases described in the related issue
 
-See [`.github/pull_request_template.md`](https://github.com/{{ site.repository }}/blob/main/.github/pull_request_template.md)
+See [`.github/pull-request-template.md`](https://github.com/{{ site.repository }}/blob/main/.github/pull-request-template.md)
 for the full checklist.
 
 ## Code style

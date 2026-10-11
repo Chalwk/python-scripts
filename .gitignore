@@ -74,7 +74,15 @@ members.csv
 channels.csv
 audit.json
 
-# Generic run artefacts - extend as needed
+# gh-traffic.py
+traffic.json
+traffic.csv
+traffic-daily.csv
+gh-traffic/
+gh-traffic/
+.gh-traffic/
+
+# Generic run artefacts
 *.log
 results.csv
 output.csv

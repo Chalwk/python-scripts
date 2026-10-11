@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 =====================================================================================
-SCRIPT NAME:      ipqs_lookup.py
+SCRIPT NAME:      ipqs-lookup.py
 VERSION:          4.0
 
 DESCRIPTION:

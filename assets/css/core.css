@@ -421,6 +421,22 @@ blockquote p:last-child {
     white-space: nowrap;
 }
 
+.version-badge {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 2px 9px;
+    border-radius: var(--radius-sm);
+    background: rgba(63, 185, 80, 0.10);
+    border: 1px solid rgba(63, 185, 80, 0.22);
+    color: var(--success);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 500;
+    line-height: 1.4;
+    white-space: nowrap;
+}
+
 .script-card-desc {
     margin: 0 0 16px;
     color: var(--text-muted);

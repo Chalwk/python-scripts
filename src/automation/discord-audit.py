@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 =====================================================================================
-SCRIPT NAME:      discord_audit.py
+SCRIPT NAME:      discord-audit.py
 VERSION:          1.0
 
 DESCRIPTION:

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 r"""
 =====================================================================================
-SCRIPT NAME:      git_stats.py
+SCRIPT NAME:      git-stats.py
 VERSION:          1.0
 
 DESCRIPTION:

@@ -60,6 +60,9 @@ description: "A grab-bag of self-contained Python scripts."
 
           <div class="script-card-footer">
             <div class="script-card-tags">
+              {% if script.latest_version %}
+                <span class="version-badge">v{{ script.latest_version }}</span>
+              {% endif %}
               {% for tag in script.tags %}
                 <span class="tag">{{ tag }}</span>
               {% endfor %}
