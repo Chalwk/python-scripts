@@ -4,7 +4,7 @@ source_path: src/automation/git-stats.py
 category: Automation
 description: "Per-author commit statistics, bus-factor estimate and activity histogram from `git log`."
 tags: [git, cli, reporting]
-latest_version: 1.0.0
+latest_version: 1.0
 features:
   - "Per-author commits, churn, active days and share of total"
   - "Bus-factor estimate at 50% and 80% coverage"

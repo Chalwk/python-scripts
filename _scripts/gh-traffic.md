@@ -4,7 +4,7 @@ source_path: src/automation/gh-traffic.py
 category: Automation
 description: "GitHub repository traffic statistics: clones, views, referrers, popular paths, releases and metadata."
 tags: [github, api, cli, reporting, traffic]
-latest_version: 1.0.0
+latest_version: 1.0
 features:
   - "Clones and views (totals, uniques, and per-day breakdown)"
   - "Top referring sites and popular content paths"

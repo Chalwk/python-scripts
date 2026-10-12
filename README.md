@@ -20,10 +20,11 @@ Full documentation for each script lives on the [website](https://chalwk.github.
 
 ### Automation
 
-| Script                                                               | Docs                                                                            | What it does                                                                      |
-| -------------------------------------------------------------------- | ------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| [`src/automation/git-stats.py`](src/automation/git-stats.py)         | [Read the docs](https://chalwk.github.io/python-scripts/scripts/git-stats/)     | Per-author commit stats, bus-factor estimate, and commit histogram from `git log` |
-| [`src/automation/discord-audit.py`](src/automation/discord-audit.py) | [Read the docs](https://chalwk.github.io/python-scripts/scripts/discord-audit/) | Read-only Discord guild audit: channels, permission overwrites, roles and members |
+| Script                                                               | Docs                                                                            | What it does                                                                                 |
+| -------------------------------------------------------------------- | ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| [`src/automation/discord-audit.py`](src/automation/discord-audit.py) | [Read the docs](https://chalwk.github.io/python-scripts/scripts/discord-audit/) | Read-only Discord guild audit: channels, permission overwrites, roles and members            |
+| [`src/automation/gh-traffic.py`](src/automation/gh-traffic.py)       | [Read the docs](https://chalwk.github.io/python-scripts/scripts/gh-traffic/)    | GitHub repo traffic stats: clones, views, referrers, releases, with a permanent JSON archive |
+| [`src/automation/git-stats.py`](src/automation/git-stats.py)         | [Read the docs](https://chalwk.github.io/python-scripts/scripts/git-stats/)     | Per-author commit stats, bus-factor estimate, and commit histogram from `git log`            |
 
 ### Text & data
 

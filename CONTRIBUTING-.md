@@ -2,12 +2,12 @@
 layout: page
 title: Contributing
 subtitle: Bugs, ideas, and pull requests are welcome.
-permalink: /contributing/
+permalink: /CONTRIBUTING/
 ---
 
 ## Reporting a bug
 
-Use the [bug report template](https://github.com/{{ site.repository }}/issues/new?template=bug-report.yaml)
+Use the [bug report template](https://github.com/Chalwk/python-scripts/issues/new?template=bug-report.yaml)
 and include:
 
 - Which script is misbehaving
@@ -21,13 +21,13 @@ and include:
 
 **Do not open a public issue for security problems.**
 
-Use the private [Report a vulnerability](https://github.com/{{ site.repository }}/security/advisories/new)
-flow on the Security tab, or see [SECURITY.md](https://github.com/{{ site.repository }}/blob/main/SECURITY.md)
+Use the private [Report a vulnerability](https://github.com/Chalwk/python-scripts/security/advisories/new)
+flow on the Security tab, or see [SECURITY.md](https://github.com/Chalwk/python-scripts/blob/main/SECURITY.md)
 for the full policy, scope, and expected timelines.
 
 ## Suggesting a script or feature
 
-Use the [script request template](https://github.com/{{ site.repository }}/issues/new?template=script-request.yaml).
+Use the [script request template](https://github.com/Chalwk/python-scripts/issues/new?template=script-request.yaml).
 Describe the problem you're trying to solve, not the solution you have in
 mind - that gives me more room to suggest something simpler than what you'd
 expect.
@@ -43,7 +43,7 @@ Before opening a PR, make sure:
 - No hardcoded secrets, API keys, or real IP addresses
 - You've tested the cases described in the related issue
 
-See [`.github/pull-request-template.md`](https://github.com/{{ site.repository }}/blob/main/.github/pull-request-template.md)
+See [`.github/pull-request-template.md`](https://github.com/Chalwk/python-scripts/blob/main/.github/pull-request-template.md)
 for the full checklist.
 
 ## Code style
@@ -57,5 +57,5 @@ There's no enforced linter, but the house style is:
 
 ## Questions
 
-Open a [GitHub Discussion](https://github.com/{{ site.repository }}/discussions)
-or find me on [Discord](https://discord.gg/wuVcM9AZrr).
+Open a [GitHub Discussion](https://github.com/Chalwk/python-scripts/discussions)
+or find me on [Discord](https://discord.gg/g6ENWebHsE).

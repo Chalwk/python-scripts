@@ -4,7 +4,7 @@ source_path: src/automation/discord-audit.py
 category: Automation
 description: "Read-only Discord guild audit: channels, permission overwrites, roles and members."
 tags: [discord, api, cli, audit]
-latest_version: 1.0.0
+latest_version: 1.0
 features:
   - "Channels grouped by category, with every permission overwrite spelled out"
   - "Roles sorted by position, with per-role member counts and elevated-permission flags"

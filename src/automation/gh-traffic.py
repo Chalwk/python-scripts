@@ -2,7 +2,7 @@
 """
 =====================================================================================
 SCRIPT NAME:      gh-traffic.py
-VERSION:          1.0.0
+VERSION:          1.0
 
 DESCRIPTION:
     Pull GitHub repository traffic statistics for one or more repositories:
